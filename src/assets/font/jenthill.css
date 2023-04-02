@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Jenthill";
+  src: url("Jenthill.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Mosk";
+  src: url("Mosk-Normal-400.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Mosk";
+  src: url("Mosk-Medium-500.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Mosk";
+  src: url("Mosk-Bold-700.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Mosk";
+  src: url("Mosk-Extra-Bold-800.ttf") format("woff2");
+}

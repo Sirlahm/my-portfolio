@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  font-family: "Mosk";
+  color: #333333;
+}
+* {
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+  overflow-y: scroll;
+}
+a {
+  cursor: pointer;
+}
+.filter {
+  /* filter: grayscale(20%) contrast(1) brightness(90%); */
+}
+.filter:hover {
+  filter: none;
+}
+.fg::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* inset: 0px; */
+  z-index: 1;
+  /* transition: var(--transition); */
+  background-color: rgb(59, 57, 57);
+  mix-blend-mode: screen;
+}
+
+.fg::before:hover {
+  display: none;
+}
+.bgg {
+  background: linear-gradient(90deg, #f5f0e1 33%, #6fdcbfe6 33%);
+}
+
+.textStroke {
+  color: transparent !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333333;
+}
+
+.boxShadow {
+  box-shadow: 0.5rem 0.5rem 0 0 #333333;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f5f0e1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6fdcbfe6;
+  border-radius: 100px;
+  background-clip: content-box;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  display: none;
+  /* display: block; */
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  right: 0;
+  top: 1.1rem;
+  height: 2px;
+  transform: rotate(0deg);
+
+  background-color: #6fdcbfe6;
+  transition: 0.2s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 2px;
+  transform: rotate(0deg);
+
+  background-color: #6fdcbfe6;
+  transition: 0.2s ease;
+}
+
+.x-btn::after {
+  width: 100%;
+  top: 0;
+  transform: rotate(-45deg);
+}
+.x-btn::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.fill{
+  fill: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .hide{
+    display: none !important;
+  }
+  .fill{
+    fill: #dcdcdc;
+  }
+  .btn {
+    display: flex;
+  }
+  .bgg {
+    background:  #f5f0e1;
+  }
+  .textStroke {
+    
+    -webkit-text-stroke-color: #333333;
+  }
+  
+}
+.filll{
+    filter: blur(250px) brightness(1);
+}
+/* @media only screen and (max-width: 768px) {
+    .trans {
+        top: 0;
+        
+        transform: translate(-50%,0%);
+        left: 50%;
+    }
+  } */
+
